@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <h2>Projects I've Worked On</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'coder.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><strong>nSport</strong></p>
+                    <p class="card-text">A BMS for users to book spots and admins to maintain statistics, users, and arcade games.</p>
+                    <a href="#" class="btn btn-primary">In Progress</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'stocksense.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><strong>StockSense</strong></p>
+                    <p class="card-text">A web application that enables users to effortlessly monitor the prices of their stock investments.</p>
+                    <a href="#" class="btn btn-primary">In Progress</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'thoughts.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><strong>thoughtTracker</strong></p>
+                    <p class="card-text">A web app for mindful journaling, allowing users to document thoughts and personal growth.</p>
+                    <a href="#" class="btn btn-primary">In Progress</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

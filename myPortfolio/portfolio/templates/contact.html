@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2> Contact Me</h2>
+    <div id="contact_me">
+        <div class="row">
+            <div class="col-md">
+                <p>
+                    <form method="post" action="{% url 'portfolio:send_email' %}">
+                        {% csrf_token %}
+                        <input type="text" class="form-control" placeholder="Enter your name..." name="name">
+                        <input type="email" class="form-control" placeholder="Enter your email..." name="email">
+                        <textarea name="message" class="form-control" placeholder="Enter your message..." id="" cols="30" rows="6" name="message"></textarea>
+                        <input type="submit" class="btn-submit btn" value="Submit">
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

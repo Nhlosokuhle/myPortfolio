@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static  %}
+    <div id="home" class="row">
+        <div class="col-md-8">
+            <p>Hello, my name is</p>
+            <h2>Nhlosokuhle Bandile Khoza</h2>
+            <p>I'm a Web Application Developer</p>
+            <ul class="icons">
+                <li><a href="https://github.com/Nhlosokuhle"><i class="bx bxl-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/iamnhlosokuhle/"><i class="bx bxl-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid" src="{% static 'my_picture.png' %}" alt="">
+        </div>
+    </div>
+{% endblock %}
